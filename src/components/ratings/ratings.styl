@@ -1,0 +1,108 @@
+.ratings
+    height: calc(100vh - 176px)
+    font-weight: 200
+    overflow: hidden
+    .score-wrap
+        display: flex
+        width: 100%
+        padding: 18px 0
+        font-size: 12px
+        .txt
+            color: rgb(7, 17, 27)
+            line-height: 18px
+        .content-left
+            flex: 0 0 136px
+            align-self: center
+            width: 136px
+            text-align: center
+            span
+                display: block
+            .seller-score
+                display: block
+                font-size: 24px
+                color: rgb(255, 153, 0)
+                margin-bottom: 8px
+            .txt
+                margin-bottom: 8px
+            .rank-rate
+                margin-bottom: 6px
+                font-size: 10px
+                color: rgb(147, 153, 159)
+        .content-right
+            align-self: center
+            padding: 0 24px
+            border-left: 1px solid #e6e7e8
+            .food-score,.service-score,.send-time
+                display: flex
+                align-items: center
+                margin-bottom: 8px
+                .txt
+                    margin-right: 12px
+                .score
+                    color: #ff990
+                .time
+                    font-size: 12px
+                    color: rgb(147, 153, 159)
+            .food-score
+                margin-top: 8px
+    .ratings-list
+        padding: 0 18px
+        li
+            padding: 18px 0
+            border-bottom: 1px solid rgba(7, 17, 27, .1)
+            &:last-child
+                border: none
+            .user
+                display: flex
+                font-size: 10px
+                .avatar
+                    width: 28px
+                    height: 28px
+                    margin-right: 12px
+                    overflow: hidden
+                    border-radius: 50%
+                .mation
+                    flex: 1 1 auto
+                    .txt-wrap,.star-wrap
+                        display: flex
+                        width: 100%
+                        align-content: center
+                    .txt-wrap
+                        margin-bottom: 4px
+                        .username
+                            flex: 1 1 auto
+                        .time
+                            color: rgb(147, 153, 159)
+                    .star-wrap
+                        .star-icon
+                            margin-right: 6px
+                        .send-time
+                            align-self: center
+                            font-weight: 200
+                            color: rgb(147, 153, 159)
+            .text
+                margin: 8px 0
+                padding-left: 40px
+                font-size: 12px
+                line-height: 18px
+            .recommend
+                padding-left: 40px
+                font-size: 0
+                .icon
+                    font-size: 12px
+                    vertical-align: middle
+                    &.icon-thumb_up
+                        color: rgb(0, 160, 220)
+                    &.icon-thumb_down
+                        color: rgb(183, 187, 191)
+                .food-name
+                    display: inline-block
+                    padding: 0 6px
+                    margin-left: 8px
+                    font-size: 9px
+                    line-height: 16px
+                    color: rgb(147, 153, 159)
+                    vertical-align: middle
+                    border: 1px solid rgba(7, 17, 27, .1)
+                    border-radius: 2px
+                    

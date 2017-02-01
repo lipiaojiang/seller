@@ -1,0 +1,91 @@
+.goods
+    display: flex
+    height: calc(100vh - 224px)
+    font-weight: 200
+    overflow: hidden
+    .goods-menu
+        flex: 0 0 80px
+        background-color: #f3f5f7
+        .menu-list 
+            li
+                display: flex
+                align-items: center
+                height: 54px
+                padding: 0 12px
+                position: relative
+                &::after
+                    display: block
+                    content: ''
+                    width: calc(100% - 24px)
+                    height: 1px
+                    position: absolute
+                    left: 12px
+                    bottom: 0
+                    background: rgba(7, 17, 27, .1)
+                    z-index: 9
+                .text
+                    font-size: 12px
+                    color: rgb(7, 17, 27)
+                &:last-child
+                    &::after
+                        display: none
+                &.cur
+                    background-color: #fff
+                    &::after
+                        display: none
+    .goods-list
+        flex: 1 1 auto
+        .goods-name
+            height: 26px
+            padding-left: 14px
+            font-size: 12px
+            line-height: 26px
+            color: rgb(147, 153, 159)
+            border-left: 2px solid #d9dde1
+            background-color: #f3f5f7
+        .food-item
+            display: flex
+            padding: 18px
+            position: relative
+            &::after
+                display: block
+                content: ''
+                width: calc(100% - 32px)
+                height: 1px
+                position: absolute
+                left: 16px
+                bottom: 0
+                background-color: rgba(7, 17, 27, .1)
+            &:last-child
+                &::after
+                    display: none
+            .icon
+                flex: 0 0 58px
+                width: 58px
+                height: 58px
+                margin-right: 10px
+            .content
+                color: rgb(147, 153, 159)
+                .name
+                    margin-bottom: 8px
+                    font-size: 14px
+                    color: rgb(7, 17, 27)
+                    font-weight: bold
+                .description,.extra
+                    margin-bottom: 8px
+                    font-size: 10px
+                .price
+                    .now-price
+                        font-weight: 700
+                        font-size: 14px
+                        color: #f00
+                    .old-price
+                        font-size: 10px
+                        text-decoration: line-through
+            .choose-wrap
+                position: absolute
+                right: 18px
+                bottom: 18px
+
+
+    

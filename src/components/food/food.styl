@@ -1,0 +1,138 @@
+.food-wrap
+    width: 100%
+    height: 100%
+    position: fixed
+    top: 0
+    left: 0
+    background-color: #fff
+    z-index: 100
+    .scroll
+        height: calc(100% - 96px)
+        overflow: hidden
+    .container
+        padding-bottom: 16px
+    .back-wrap
+        width: 100%
+        height: 48px
+        padding: 0 18px
+        line-height: 48px
+        background-color: #141d27 
+        .back
+            width: 64px
+            font-size: 14px
+            color: #fff
+            span
+                margin-right: 4px
+                font-size: 12px
+                vertical-align: top
+            .text
+                font-weight: bold
+    .pic
+        width: 100%
+        height: 100vw
+        img
+            width: 100%
+            height: 100%
+    .mation
+        position: relative
+        padding: 18px
+        color: rgb(147, 153, 159)
+        .name
+            margin-bottom: 8px
+            font-size: 14px
+            color: rgb(7, 17, 27)
+            font-weight: bold
+        .description,.extra
+            margin-bottom: 8px
+            font-size: 10px
+        .price
+            .now-price
+                font-weight: 700
+                font-size: 14px
+                color: #f00
+            .old-price
+                font-size: 10px
+                text-decoration: line-through
+        .car-btn
+            width: 100px
+            position: absolute
+            bottom: 18px
+            right: 18px
+            .btn
+                width: 74px
+                height: 24px
+                position: absolute
+                bottom: 0
+                right: 0
+                font-size: 10px
+                line-height: 24px
+                color: #fff
+                text-align: center
+                background-color: rgb(0 ,160, 260)
+                border-radius: 12px
+    
+    .info-wrap
+        padding: 18px
+        .title
+            font-size: 16px
+            font-weight: 700
+            margin-bottom: 6px
+        .text
+            padding: 0 8px
+            font-size: 14px
+            line-height: 2
+            color: rgb(77, 85, 93)
+    .rating-list
+        padding: 0 18px
+        li
+            padding: 16px 0
+            border-bottom: 1px solid rgba(7, 17, 27, .1)
+            .tit
+                display: flex
+                align-content: space-between
+                margin-bottom: 6px
+                line-height: 12px
+                font-size: 10px
+                color: rgb(147, 153, 159)
+                .name  
+                    flex: 1 1 auto
+                    margin: 0 6px
+                    text-align: right
+                .avatar
+                    flex: 0 0 12px
+                    width: 12px
+                    height: 12px
+                    overflow: hidden
+                    border-radius: 50%
+            .text
+                font-size: 12px
+                color: rgb(7, 17, 27)
+                .icon-thumb_up
+                    display: inline-block
+                    vertical-align: top
+                    margin-right: 4px
+                    color: rgb(0, 160, 220)
+                .icon-thumb_down
+                    display: inline-block
+                    vertical-align: top
+                    margin-right: 4px
+                    color: rgb(147, 153, 159)
+    .noratings
+        padding: 18px
+        font-size: 14px
+        color: rgb(77, 85, 93)
+.foodSlideLeft-enter-active,.foodSlideLeft-leave-active
+    transition: all .5s 
+.foodSlideLeft-enter,.foodSlideLeft-leave-active
+    opacity: 0
+    transform: translate3d(100%, 0, 0)
+.fadeOutBtn-enter-active,.fadeOutBtn-leave-active
+    transition: all .5s
+.fadeOutBtn-enter,.fadeOutBtn-leave-active
+    opacity: 0
+    transform: translate3d(-100%, 0, 0)
+.fadeInBtn-enter-active,.fadeInBtn-leave-active
+    transition: all .5s
+.fadeInBtn-enter,.fadeInBtn-leave-active
+    opacity: 0
+    transform: translate3d(100%, 0, 0)

@@ -1,0 +1,24 @@
+.addctrl
+    display: flex
+    align-items: center
+    .pre,.add
+        padding: 4px
+        font-size: 24px
+        color: rgb(0, 160, 220)
+        .inner
+            display: block
+    .count
+        flex: 0 0 24px
+        width: 24px
+        text-align: center
+    .move-enter-active,.move-leave-active
+        transition: all .5s
+        .inner
+            transition: all .5s
+    .move-enter,.move-leave-active
+        opacity: 0
+        transform: translate3d(40px, 0, 0)
+        .inner
+            transform: rotate(180deg)
+            
+        
